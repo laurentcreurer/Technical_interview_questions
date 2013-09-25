@@ -24,6 +24,7 @@ public class Algorithm {
      * @return value in english language
      */
 	public static StringBuffer numberToWords(int value) {
+		System.out.println("-- Algorithm --");
 		
 		// Variable declaration
 		StringBuffer stringValue = new StringBuffer();
