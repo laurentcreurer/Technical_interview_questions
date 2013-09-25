@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-
 /*
  * This class print the Fibonacci sequence.
  * This class use a Non recursive function.
@@ -18,6 +17,7 @@ public class Fib {
 	 */
 	public static void fib() {
 	
+		System.out.println("-- StwAndo --");
 		// Variable declaration
 		List<Integer> fib = new ArrayList<Integer>();
 		
@@ -34,9 +34,6 @@ public class Fib {
 		}
 	}
 }
-
-
-// Non recursive
 
 
 
