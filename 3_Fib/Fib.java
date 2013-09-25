@@ -17,7 +17,7 @@ public class Fib {
 	 */
 	public static void fib() {
 	
-		System.out.println("-- StwAndo --");
+		System.out.println("-- Fib --");
 		// Variable declaration
 		List<Integer> fib = new ArrayList<Integer>();
 		
