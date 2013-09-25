@@ -16,8 +16,8 @@ public class Fib {
 	 * Non recursive function that prints the Fibonacci sequence.
 	 */
 	public static void fib() {
-	
 		System.out.println("-- Fib --");
+		
 		// Variable declaration
 		List<Integer> fib = new ArrayList<Integer>();
 		
