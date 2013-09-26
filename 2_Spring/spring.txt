@@ -1,0 +1,32 @@
+-- Spring --
+ 
+What does the following XML fragment do.
+
+
+<bean id="myTestBean" class="com.stw.core.person.Person" scope="prototype" factory-method="createNew" depends-on="dataSource">
+	<property name="firstName" value="${first.name}"/>
+	<property name="phone" ref="phone"/>
+</bean>
+
+
+-----------------------------------------------------------------------------------------------------------
+
+This XML fragment comes from a "spring.xml" file. This is a configuration file to define the various objects that will be managed 
+by Spring framework. Those objects are manage by the “Spring IoC container" and are named Beans. 
+
+This code creates the Bean "myTestBean" defined by the class "com.stw.core.person.Person".
+
+This Bean is not considered as a singleton (scope = "prototype"), which means that when two requests are made for that Bean, a new 
+instance of this object is provided by the BeanFactory.
+
+This Bean use the factory method "createNew" to be instantiate (factory-method="createNew").
+
+The bean "dataSource" is a dependency of "myTestBean" (depends-on="dataSource"), wich means that "dataSource” is used to set 
+properties of "myTestBean". The “depends-on” attribute is used to explicitly force "dataSource" bean to be initialized before “myTestBean” is initialized.
+
+The property “firstName“ is using the “datasource” Bean.
+
+This Bean is using a reference to “phone”  Bean.
+
+
+ 
