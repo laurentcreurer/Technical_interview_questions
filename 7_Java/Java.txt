@@ -1,0 +1,7 @@
+-- Java --
+Suppose you are using a Map. How would you go about detecting how many times put() and get() are called on it.
+
+-----------------------------------------------------------------------------------------------------------
+
+To detect how many times put() and get() are called on a Map, I could make my own class who 
+Implement the Map interface, using a count in functions Put() and get().
